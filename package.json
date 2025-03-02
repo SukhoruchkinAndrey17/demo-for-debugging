@@ -1,6 +1,7 @@
 {
   "name": "demo-for-debugging",
   "version": "0.1.0",
+  "homepage": "https://sukhoruchkinandrey17.github.io/demo-for-debugging/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
