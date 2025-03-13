@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { validate } from "./validators";
+import { validate12 } from "../validators";
 
 export default function Task1() {
   const [inputValue, setInputValue] = useState("");
@@ -8,7 +8,7 @@ export default function Task1() {
     let newValue;
 
     try {
-      newValue = validate(e.target.value);
+      newValue = validate12(e.target.value);
     } catch {
       console.error("Ошибка. Но не тут, это просто log. Где ошибка?");
       newValue = "";
@@ -19,7 +19,8 @@ export default function Task1() {
 
   return (
     <div className="TaskContent">
-      <h1>Введите "Привет" в поле ввода</h1>
+      <h1>Введите "Привет" в поле ввода.</h1>
+      <h1>Почему слово не получилось ввести?</h1>
       <input onInput={onInput} value={inputValue} />
     </div>
   );
